@@ -35,3 +35,4 @@ python mnist.py --job_name worker --task_index 1 --worker_hosts "localhost:2222,
 python mnist.py --job_name ps --task_index 0 --worker_hosts "localhost:2222,localhost:2223" --ps_hosts "localhost:2224"
 ```
 This will start a local job in distributed mode with 2 workers and 1 parameter server. This is useful for testing purposes but will not speed up your training.
+
