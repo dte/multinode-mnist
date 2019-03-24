@@ -1,0 +1,13 @@
+version: 1
+
+type: "multi-grpc"
+worker:
+  container: "tensorflow/tensorflow:1.8.0-gpu"
+  command: "nvidia-smi"
+  machine-type: "K80"
+  count: 2
+parameter-server:
+  container: "tensorflow/tensorflow:1.8.0-gpu"
+  command: "nvidia-smi"
+  machine-type: "K80"
+  count: 1
