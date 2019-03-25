@@ -4,10 +4,10 @@ type: "multi-grpc"
 worker:
   container: "tensorflow/tensorflow:1.8.0-gpu"
   command: "nvidia-smi"
-  machine-type: "K80"
+  machine-type: "P5000"
   count: 2
 parameter-server:
   container: "tensorflow/tensorflow:1.8.0-gpu"
   command: "nvidia-smi"
-  machine-type: "K80"
+  machine-type: "P5000"
   count: 1
